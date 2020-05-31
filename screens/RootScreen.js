@@ -8,9 +8,9 @@ import BackHome from './BackHomeScreen';
 
 const RootScreen = () => {
   return (
-    <Container>
+    <Container style={{ backgroundColor: colors.secondary }}>
       <Header style={{ backgroundColor: colors.secondary }} hasTabs />
-      <Tabs tabBarUnderlineStyle={{ borderBottomWidth: '5px' }}>
+      <Tabs tabBarUnderlineStyle={{ borderBottomWidth: 5 }}>
         <Tab heading={
           <TabHeading style={{ backgroundColor: colors.secondary }}>
             <Grid>

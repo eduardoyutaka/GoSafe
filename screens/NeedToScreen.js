@@ -1,9 +1,10 @@
 import React from 'react';
+import * as colors from '../theme/colors';
 import { Content, Text } from 'native-base';
 
 const NeedToScreen = () => {
   return (
-    <Content padder>
+    <Content style={{ backgroundColor: colors.secondary }} padder>
       <Text>NeedToScreen</Text>
     </Content>
   );
