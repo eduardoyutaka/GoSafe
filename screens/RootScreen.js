@@ -52,7 +52,7 @@ const RootScreen = () => {
             <Grid>
               <Row>
                 <Col>
-                  <Icon name="navigate" style={{ color: 'black', textAlign: 'center' }} />
+                  <Icon name="home" style={{ color: 'black', textAlign: 'center' }} />
                 </Col>
               </Row>
               <Row>
