@@ -6,6 +6,7 @@ import NeedTo from './NeedToScreen';
 import WhereTo from './WhereToScreen';
 import BackHome from './BackHomeScreen';
 import DestinationList from './DestinationListScreen';
+import Review from './ReviewScreen';
 
 class RootScreen extends React.Component {
   constructor(props) {
@@ -64,6 +65,9 @@ class RootScreen extends React.Component {
             }
             {this.state && this.state.screen === 'DestinationList' &&
               <DestinationList navigate={this.navigate} />
+            }
+            {this.state && this.state.screen === 'Review' &&
+              <Review />
             }
           </Tab>
           <Tab heading={

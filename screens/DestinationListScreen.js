@@ -3,11 +3,11 @@ import * as colors from '../theme/colors';
 import { Image } from 'react-native';
 import { Body, Card, CardItem, Content, Left, Right, Text, Thumbnail } from 'native-base';
 
-const DestinationListScreen = () => {
+const DestinationListScreen = ({ navigate }) => {
   return (
     <Content style={{ backgroundColor: colors.secondary }}>
       <Card>
-        <CardItem>
+        <CardItem button onPress={() => navigate('Review')}>
           <Left>
             <Thumbnail source={require('../assets/muffato-logo.jpg')} />
             <Body>
@@ -17,10 +17,10 @@ const DestinationListScreen = () => {
             </Body>
           </Left>
         </CardItem>
-        <CardItem cardBody>
+        <CardItem button onPress={() => navigate('Review')} cardBody>
           <Image source={require('../assets/muffato.jpg')} style={{height: 200, width: null, flex: 1}}/>
         </CardItem>
-        <CardItem>
+        <CardItem button onPress={() => navigate('Review')}>
           <Left>
             <Thumbnail source={require('../assets/6.jpg')} style={{ width: 200 }} />
           </Left>
@@ -33,7 +33,7 @@ const DestinationListScreen = () => {
         </CardItem>
       </Card>
       <Card>
-        <CardItem>
+        <CardItem button onPress={() => navigate('Review')}>
           <Left>
             <Thumbnail source={require('../assets/big-logo.jpg')} />
             <Body>
@@ -43,10 +43,10 @@ const DestinationListScreen = () => {
             </Body>
           </Left>
         </CardItem>
-        <CardItem cardBody>
+        <CardItem button onPress={() => navigate('Review')} cardBody>
           <Image source={require('../assets/big.jpg')} style={{height: 200, width: null, flex: 1}}/>
         </CardItem>
-        <CardItem>
+        <CardItem button onPress={() => navigate('Review')}>
           <Left>
             <Thumbnail source={require('../assets/6.jpg')} style={{ width: 200 }} />
           </Left>
