@@ -4,17 +4,17 @@ import MapView from 'react-native-maps';
 import { Col, Row, Grid } from 'react-native-easy-grid';
 import { Button, Content, Form, Icon, Input, Item, Text } from 'native-base';
 
-const WhereToScreen = () => {
+const WhereToScreen = ({ navigate }) => {
   return (
     <Content style={{ backgroundColor: colors.secondary }} contentContainerStyle={{ alignItems: 'center' }} padder>
-      <Form >
+      <Form>
         <Text style={{ fontFamily: 'museo', textAlign: 'center', paddingTop: 20, paddingBottom: 20, fontSize: 24 }}>Where do you NEED to go?</Text>
         <Item regular style={{ backgroundColor: 'white', borderRadius: 10, marginBottom: 30 }}>
-          <Input />
+          <Input placeholder="Search" />
           <Icon name="search" />
         </Item>
         <MapView style={{ width: 310, height: 310 }} />
-        <Button style={{ backgroundColor: colors.primary, justifyContent: 'center', marginTop: 30 }}>
+        <Button style={{ backgroundColor: colors.primary, justifyContent: 'center', marginTop: 30 }} onPress={() => navigate('DestinationList')}>
           <Text style={{ color: 'black', fontFamily: 'museo', textAlign: 'center' }}>Going now!</Text>
         </Button>
       </Form>
