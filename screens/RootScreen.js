@@ -21,7 +21,6 @@ class RootScreen extends React.Component {
   }
 
   render() {
-    console.log('RootScreen.state: ', this.state);
     return (
       <Container style={{ backgroundColor: colors.secondary }}>
         <Header style={{ backgroundColor: colors.secondary }} hasTabs />
@@ -67,7 +66,7 @@ class RootScreen extends React.Component {
               <DestinationList navigate={this.navigate} />
             }
             {this.state && this.state.screen === 'Review' &&
-              <Review />
+              <Review navigate={this.navigate} />
             }
           </Tab>
           <Tab heading={
